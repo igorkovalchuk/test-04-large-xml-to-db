@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+
+		<ns2:GetTransactionsResponse
+			xmlns:ns2="http://example.com/dbo">
+
+			<transactions>
+
+				<transaction>
+
+					<place>A PLACE 1</place>
+					<amount>10.01</amount>
+					<currency>UAH</currency>
+					<card>123456****1234</card>
+
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Ivanoff</lastName>
+						<middleName>Ivanoff</middleName>
+						<inn>1234567890</inn>
+					</client>
+
+				</transaction>
+
+				<transaction>
+					<place>A PLACE 2</place>
+					<amount>9876.01</amount>
+					<currency>UAH</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Ivanoff</lastName>
+						<middleName>Ivanoff</middleName>
+						<inn>1234567890</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 3</place>
+					<amount>12.01</amount>
+					<currency>USD</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Ivanoff</lastName>
+						<middleName>Ivanoff</middleName>
+						<inn>1234567890</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 4</place>
+					<amount>12.01</amount>
+					<currency>EUR</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Ivanoff</lastName>
+						<middleName>Ivanoff</middleName>
+						<inn>1234567890</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 1</place>
+					<amount>10.01</amount>
+					<currency>UAH</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Petroff</lastName>
+						<middleName>Petroff</middleName>
+						<inn>1234567891</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 2</place>
+					<amount>9876.01</amount>
+					<currency>UAH</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Petroff</lastName>
+						<middleName>Petroff</middleName>
+						<inn>1234567891</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 3</place>
+					<amount>12.01</amount>
+					<currency>USD</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Petroff</lastName>
+						<middleName>Petroff</middleName>
+						<inn>1234567891</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 4</place>
+					<amount>12.01</amount>
+					<currency>EUR</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Petroff</lastName>
+						<middleName>Petroff</middleName>
+						<inn>1234567891</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 1</place>
+					<amount>10.01</amount>
+					<currency>UAH</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Sidoroff</lastName>
+						<middleName>Sidoroff</middleName>
+						<inn>1234567892</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 2</place>
+					<amount>9876.01</amount>
+					<currency>UAH</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Sidoroff</lastName>
+						<middleName>Sidoroff</middleName>
+						<inn>1234567892</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 3</place>
+					<amount>12.01</amount>
+					<currency>USD</currency>
+					<card>123456****1234</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Sidoroff</lastName>
+						<middleName>Sidoroff</middleName>
+						<inn>1234567892</inn>
+					</client>
+				</transaction>
+				<transaction>
+					<place>A PLACE 12</place>
+					<amount>120</amount>
+					<currency>EUR</currency>
+					<card>123456****1212</card>
+					<client>
+						<firstName>Ivan</firstName>
+						<lastName>Sidorkin</lastName>
+						<middleName>Sidoroff</middleName>
+						<inn>1234567892</inn>
+					</client>
+				</transaction>
+			</transactions>
+		</ns2:GetTransactionsResponse>
+	</soap:Body>
+</soap:Envelope>

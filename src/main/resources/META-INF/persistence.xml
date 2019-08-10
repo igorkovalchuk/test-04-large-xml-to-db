@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+   <persistence-unit name="sample">
+   <!--
+      <jta-data-source>java:/DefaultDS</jta-data-source>
+   -->
+
+      <class>com.example.entities.ClientTransaction</class>
+      <class>com.example.entities.Client</class>
+
+      <properties>
+
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="javax.persistence.jdbc.user" value="my_user"/>
+         <property name="javax.persistence.jdbc.password" value="my_password"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/largexml"/>
+
+         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+
+         <!-- it is okay to have 'create' here and drop tables every time, because it is only a test task -->
+         <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+         <property name="hibernate.show_sql" value="true"/>
+         
+      </properties>
+
+   </persistence-unit>
+</persistence>
