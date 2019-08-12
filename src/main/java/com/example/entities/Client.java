@@ -7,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 @Entity
@@ -15,9 +14,8 @@ import javax.xml.bind.annotation.XmlTransient;
 public class Client implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    // it isn't optimal to use the GeneratedValue for both objects;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @XmlTransient
     private Long id;
 
@@ -30,7 +28,6 @@ public class Client implements Serializable {
     // 1234567890
     private Integer inn;
 
-    @XmlElement
     public Long getId() {
         return id;
     }

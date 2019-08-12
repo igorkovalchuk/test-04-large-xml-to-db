@@ -13,14 +13,25 @@
 
       <properties>
 
+
          <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
          <property name="javax.persistence.jdbc.user" value="my_user"/>
          <property name="javax.persistence.jdbc.password" value="my_password"/>
-         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/largexml?rewriteBatchedStatements=true"/>
-
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/largexml?rewriteBatchedStatements=true&amp;profileSQL=true"/>
          <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
 
-         <property name="hibernate.jdbc.batch_size" value="200"/>
+<!-- 
+         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+         <property name="javax.persistence.jdbc.user" value="my_user"/>
+         <property name="javax.persistence.jdbc.password" value="my_password"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://127.0.0.1:5432/largexml?reWriteBatchedInserts=true"/>
+         <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+ -->
+
+         <!-- PostgreSQL javax.persistence.jdbc.url &amp;loggerLevel=TRACE -->
+
+
+         <property name="hibernate.jdbc.batch_size" value="50"/>
          <property name="hibernate.order_inserts" value="true"/>
          <property name="hibernate.order_updates" value="true"/>
 
@@ -28,11 +39,6 @@
          <property name="hibernate.hbm2ddl.auto" value="create"/>
 
          <property name="hibernate.show_sql" value="true"/>
- <!--
-         <property name="hibernate.use_sql_comments" value="true"/> 
-         <property name="hibernate.format_sql" value="true"/>
-         <property name="hibernate.generate_statistics=true" value="true"/>
- -->
 
       </properties>
 

@@ -25,7 +25,6 @@ public class Main {
 
         ClientTransaction ct2;
 
-        // Normally we should use batches here, because batches is much faster;
         do {
             ct2 = u.process();
             if (ct2 != null) {
