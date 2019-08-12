@@ -1,2 +1,4 @@
 
-TODO: fix batch processing for MySQL
+Time spent: 15 h
+
+TODO: fix batch processing
