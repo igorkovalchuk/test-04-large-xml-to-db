@@ -16,15 +16,24 @@
          <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
          <property name="javax.persistence.jdbc.user" value="my_user"/>
          <property name="javax.persistence.jdbc.password" value="my_password"/>
-         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/largexml"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/largexml?rewriteBatchedStatements=true"/>
 
          <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+
+         <property name="hibernate.jdbc.batch_size" value="200"/>
+         <property name="hibernate.order_inserts" value="true"/>
+         <property name="hibernate.order_updates" value="true"/>
 
          <!-- it is okay to have 'create' here and drop tables every time, because it is only a test task -->
          <property name="hibernate.hbm2ddl.auto" value="create"/>
 
          <property name="hibernate.show_sql" value="true"/>
-         
+ <!--
+         <property name="hibernate.use_sql_comments" value="true"/> 
+         <property name="hibernate.format_sql" value="true"/>
+         <property name="hibernate.generate_statistics=true" value="true"/>
+ -->
+
       </properties>
 
    </persistence-unit>

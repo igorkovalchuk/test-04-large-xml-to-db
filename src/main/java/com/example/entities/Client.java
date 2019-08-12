@@ -17,7 +17,7 @@ public class Client implements Serializable {
 
     // it isn't optimal to use the GeneratedValue for both objects;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @XmlTransient
     private Long id;
 

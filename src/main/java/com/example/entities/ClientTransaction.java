@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlTransient;
 public class ClientTransaction implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    // this identifier is a dummy;
+    // this identifier is a dummy identifier;
     @Id
     @XmlTransient
     private Long id;
@@ -39,6 +39,10 @@ public class ClientTransaction implements Serializable {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getPlace() {

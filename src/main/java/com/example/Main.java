@@ -13,7 +13,7 @@ public class Main {
         save("test.xml", s);
     }
 
-    public static void save(String fileName, Serializer s) throws XMLStreamException, JAXBException {
+    public static void save(String fileName, DatabaseSerializer s) throws XMLStreamException, JAXBException {
         File inputFile = new File(fileName);
         
         s.init();
@@ -30,7 +30,7 @@ public class Main {
             ct2 = u.process();
             if (ct2 != null) {
                 s.save(ct2);
-                System.out.println(ct2);
+                //System.out.println(ct2);
             }
         } while(ct2 != null);
 
