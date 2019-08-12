@@ -1,1 +1,2 @@
-# test-04-large-xml-to-db
+
+TODO: fix batch processing for MySQL
