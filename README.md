@@ -1,3 +1,6 @@
+Тестове завдання. Читання великого (1 Gb) XML файлу та запис в БД, з використанням ORM.
+
+Використано: StAX + JAXB, JPA (Hibernate), INSERT batch processing, Gradle, MySQL/PostgreSQL.
 
 Time spent: 14.6 h
 
