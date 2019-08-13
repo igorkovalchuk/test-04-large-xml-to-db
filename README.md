@@ -2,6 +2,11 @@
 
 Використано: StAX + JAXB, JPA (Hibernate), INSERT batch processing, Gradle, MySQL/PostgreSQL.
 
+StAX використано для послідовного читання, оскільки завантажувати великий файл в пам'ять не еффективно.
+Також використано batch processing для підвищення швидкодії запису в БД.
+
+Я помилково вирішив що batch processing на Hibernate/MySQL чомусь не працює (Hibernate показує в своїх logs тільки окремі INSERTs), тож додатково використав PostgreSQL щоб перевірити це.
+
 Time spent: 14.6 h
 
 plus
